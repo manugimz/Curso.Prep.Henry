@@ -60,8 +60,7 @@ function divide(x, y) {
 }
 
 function sonIguales(x, y) {
-  if(x==y){return true}
-  return false
+ return (x === y)? true : false;
 
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
@@ -69,8 +68,9 @@ function sonIguales(x, y) {
 }
 
 function tienenMismaLongitud(str1, str2) {
-  if(str1.length== str2.length){return true}
-  return false
+  //if(str1.length== str2.length){return true}
+  //return false
+  return str1.length === str2.length ? true : false; //con operador ternario
 
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
@@ -78,20 +78,22 @@ function tienenMismaLongitud(str1, str2) {
 }
 
 function menosQueNoventa(num) {
-  if(num <90){return true}
-  return false
+  //if(num <90){return true}
+  //return false
+  return num <90? true : false; //con operador ternario
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
 }
 
 function mayorQueCincuenta(num) {
-  if(num >50){return true};
-  return false;
+ /* if(num >50){return true};
+  return false;*/
 
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
+  return num >50? true : false; //con operador ternario
 }
 
 function obtenerResto(x, y) {
@@ -104,45 +106,51 @@ function obtenerResto(x, y) {
 }
 
 function esPar(num) {
-  if(num % 2 === 0){return true};
-  return false;
+ /* if(num % 2 === 0){return true};
+  return false;*/
 
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
+  return num %2===0? true : false;
 }
 
 function esImpar(num) {
-  if(num % 2 !== 0){return true};
-  return false;
+  /*if(num % 2 !== 0){return true};
+  return false;*/
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
+return num %2 !==0? true : false;
 }
 
 function elevarAlCuadrado(num) {
-  return Math.pow(num,2);
+  //return Math.pow(num,2);
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
+  return num **2;
 }
 
 function elevarAlCubo(num) {
-  return Math.pow(num,3);
+ // return Math.pow(num,3);
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
+  return num**3;
 }
 
 function elevar(num, exponent) {
-  return Math.pow(num, exponent);
+  //return Math.pow(num, exponent);
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
+  return num **exponent;
 }
 
 function redondearNumero(num) {
   return Math.round(num);
   // Redondea "num" y devuélvelo
   // Tu código:
+
 }
 
 function redondearHaciaArriba(num) {
@@ -159,12 +167,13 @@ function agregarSimboloExclamacion(str) {
 }
 
 function combinarNombres(nombre, apellido) {
-  var combinado = nombre + ' ' + apellido;
-  return combinado;
+   var combinado = nombre + ' ' + apellido;
+   return combinado;
 
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
+ // return 'nombre ' + 'apellido'; NO ENTIENDO PORQUE NO PASA!!
 }
 
 function obtenerSaludo(nombre) {
